@@ -42,9 +42,9 @@ const PostForm = ({ post, action }: PostFormProps) => {
 
   // Query
   //muatateAsync is hook from react-query
-  const { mutateAsync: createPost, isPending: isLoadingCreate } =
+  const { mutateAsync: createPost, isLoading: isLoadingCreate } =
     useCreatePost();
-  const { mutateAsync: updatePost, isPending: isLoadingUpdate } =
+  const { mutateAsync: updatePost, isLoading: isLoadingUpdate } =
     useUpdatePost();
 
   // Handler
